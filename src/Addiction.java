@@ -10,12 +10,12 @@ public class Addiction
     private String symptoms;
     private int daysWithoutRelapse;
 
-    public Addiction(String name, String description, String symptoms, int daysWithoutRelapse)
+    public Addiction(String name, String description, String symptoms)
     {
         this.name = name;
         this.description = description;
         this.symptoms = symptoms;
-        this.daysWithoutRelapse = daysWithoutRelapse;
+        this.daysWithoutRelapse = 0;
     }
 
     public void relapse()
@@ -27,6 +27,9 @@ public class Addiction
     {
         if(hasRelapsed){
             relapse();
+        }
+        else {
+            daysWithoutRelapse += 1;
         }
     }
 }
