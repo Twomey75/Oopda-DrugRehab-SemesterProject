@@ -1,1 +1,1 @@
-make sure we have a bin folder in github
+make sure we have a bin folder in the github
